@@ -30,7 +30,7 @@ async def generate_text(data: InputData):
 
     title_template = PromptTemplate(
         input_variables = ['idea'],
-        template = "Act as a harsh critique for the following startup idea and provide feedback like what are the drawbacks and the strong points, also give tips to improve or add to the idea and based on the current market trends and different aspects provide a rough estimate of evaluation(in INR) : {idea} "
+        template = "Act as a harsh critique for the following startup idea and provide feedback like what are the drawbacks and the strong points, also give tips to improve or add to the idea : {idea}, Give an answer no matter how small the idea is, you have to give an answer."
 
     )
 
