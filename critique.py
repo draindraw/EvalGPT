@@ -30,7 +30,7 @@ async def generate_text(data: InputData):
 
     title_template = PromptTemplate(
         input_variables = ['idea'],
-        template = "Act as a harsh critique for the following startup idea and provide feedback like what are the drawbacks and the strong points, also give tips to improve or add to the idea : {idea}, Give an answer no matter how small the idea is, you have to give an answer."
+        template = "Please provide a comprehensive critique for the following startup idea, analyzing both its strengths and weaknesses. Be thorough in your evaluation, considering aspects such as market viability, potential user adoption, scalability, and differentiation from existing solutions. Additionally, identify specific drawbacks and strong points, offering constructive feedback on how the idea could be improved or expanded. Please ensure your analysis covers key areas such as the target audience, revenue model, user experience, and potential challenges in implementation. Your insights should be detailed and actionable, aiming to guide the startup toward optimal development and success. No matter the size of the idea, provide a thorough response with specific tips and recommendations to enhance its overall potential and viability in the market. Here is the startup idea : {idea}"
 
     )
 
